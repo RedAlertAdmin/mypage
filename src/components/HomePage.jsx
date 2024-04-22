@@ -63,7 +63,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.python} text={`${skills.python}%`}
                         styles={buildStyles({
-                            pathColor: '#E1FF1E'
+                            pathColor: '#E1FF1E',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}
                         />
                         <text>Python</text>
@@ -72,7 +74,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.cpp} text={`${skills.cpp}%`}
                         styles={buildStyles({
-                            pathColor: '#0F7EFE'
+                            pathColor: '#0F7EFE',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>C++</text>                        
                     </div>
@@ -80,7 +84,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.js} text={`${skills.js}%`}
                         styles={buildStyles({
-                            pathColor: '#FFE51E'
+                            pathColor: '#FFE51E',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>Javascript</text>
                     </div>
@@ -88,7 +94,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.html} text={`${skills.html}%`}
                         styles={buildStyles({
-                            pathColor: '#FE4B0F'
+                            pathColor: '#FE4B0F',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>HTML</text>
                     </div>
@@ -96,7 +104,9 @@ export const HomePage = ({ Component }) => {
                     <div> 
                         <CircularProgressbar value={skills.css} text={`${skills.css}%`}
                         styles={buildStyles({
-                            pathColor: '#0FCEFE'
+                            pathColor: '#0FCEFE',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>CSS</text>
                     </div>
@@ -104,7 +114,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.java} text={`${skills.java}%`}
                         styles={buildStyles({
-                            pathColor: '#FA8520'
+                            pathColor: '#FA8520',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>Java</text>
                     </div>
@@ -112,7 +124,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.lua} text={`${skills.lua}%`}
                         styles={buildStyles({
-                            pathColor: '#0D33F3'
+                            pathColor: '#0D33F3',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>Lua</text>
                     </div>
@@ -120,7 +134,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.elixir} text={`${skills.elixir}%`}
                         styles={buildStyles({
-                            pathColor: '#8B0DF3'
+                            pathColor: '#8B0DF3',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>Elixir</text>
                     </div>
@@ -128,7 +144,9 @@ export const HomePage = ({ Component }) => {
                     <div>
                         <CircularProgressbar value={skills.csharp} text={`${skills.csharp}%`}
                         styles={buildStyles({
-                            pathColor: '#5D0DF3'
+                            pathColor: '#5D0DF3',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>C#</text>
                     </div>
