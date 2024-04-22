@@ -140,7 +140,7 @@ export const HomePage = ({ Component }) => {
                     <SocialIcon
                     as="a"
                     network="github" 
-                    url="https://github.com/RedAlertAdmin"
+                    url="https://github.com/abdielsouza"
                     target="_blank"
                     style={{
                         width: 32,
