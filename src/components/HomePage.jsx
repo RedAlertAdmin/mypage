@@ -1,8 +1,9 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
+import MediaQuery from 'react-responsive';
 import NavigationBar from './NavigationBar';
 import MyPhoto from '../assets/images/my-photo.jpg';
 
@@ -28,6 +29,10 @@ export const HomePage = () => {
         opengl: 60,
         django: 50
     };
+
+    useEffect(() => {
+        document.title = "Abdiel Souza";
+    });
 
     return (
         <div id="home" hidden={false}>

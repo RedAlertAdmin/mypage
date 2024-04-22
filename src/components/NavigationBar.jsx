@@ -59,7 +59,7 @@ export const NavigationBar = () => {
                         }}/>
                     </div>
 
-                    <text style={{fontSize: 12, alignSelf: 'center', justifyContent: 'center'}}>
+                    <text style={{fontSize: 12, alignSelf: 'center', justifyContent: 'center'}} id="contact-text">
                         Contact: +55 (31) 99335-0829
                     </text>
                 </div>
