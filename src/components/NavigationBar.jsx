@@ -1,8 +1,7 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 export const NavigationBar = () => {
-    const [active_link, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -15,10 +14,6 @@ export const NavigationBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
 
     }, []);
-
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    };
 
     return (
         <div id="header-navbar" expand="lg" className={scrolled ? "scrolled" : ""}>

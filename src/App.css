@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -195,12 +199,12 @@ h1, h2, h3, h4, h5, h6 {
     animation-name: image-drop ;
 }
 
-#skills-indicator-div {
+.skills-indicator-div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-#skills-indicator-div > * {
+.skills-indicator-div > * {
     padding: 10px;
 }
 

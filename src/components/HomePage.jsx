@@ -1,14 +1,12 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-import React, { Component } from 'react';
-
+import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import { Link } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
 import MyPhoto from '../assets/images/my-photo.jpg';
 
-export const HomePage = ({ Component }) => {
+export const HomePage = () => {
 
     const date = new Date();
 
@@ -25,9 +23,10 @@ export const HomePage = ({ Component }) => {
     };
 
     const frameworks_and_libraries = {
-        react: 35,
+        react: 50,
         sfml: 50,
         opengl: 60,
+        django: 50
     };
 
     return (
@@ -58,8 +57,10 @@ export const HomePage = ({ Component }) => {
 
             <div id="my-skills" className="default-portfolio-div">
                 <h2>My Skills</h2>
+
                 <h3>Programming Languages</h3>
-                <div id="skills-indicator-div">
+
+                <div className="skills-indicator-div">
                     <div>
                         <CircularProgressbar value={skills.python} text={`${skills.python}%`}
                         styles={buildStyles({
@@ -149,6 +150,51 @@ export const HomePage = ({ Component }) => {
                             pathTransition: 'stroke-dashoffset 0.5s ease 0s'
                         })}/>
                         <text>C#</text>
+                    </div>
+                </div>
+
+                <h3>Frameworks and Libraries</h3>
+
+                <div className='skills-indicator-div'>
+                    <div>
+                        <CircularProgressbar value={frameworks_and_libraries.react} text={`${frameworks_and_libraries.react}%`}
+                        styles={buildStyles({
+                            pathColor: '#59f0dc',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
+                        })}
+                        />
+                        <text>React</text>
+                    </div>
+
+                    <div>
+                        <CircularProgressbar value={frameworks_and_libraries.opengl} text={`${frameworks_and_libraries.opengl}%`}
+                        styles={buildStyles({
+                            pathColor: '#1b5587',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
+                        })}/>
+                        <text>OpenGL</text>                        
+                    </div>
+
+                    <div>
+                        <CircularProgressbar value={frameworks_and_libraries.sfml} text={`${frameworks_and_libraries.sfml}%`}
+                        styles={buildStyles({
+                            pathColor: '#40fc32',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
+                        })}/>
+                        <text>SFML</text>
+                    </div>
+
+                    <div>
+                        <CircularProgressbar value={frameworks_and_libraries.django} text={`${frameworks_and_libraries.django}%`}
+                        styles={buildStyles({
+                            pathColor: '#4d9906',
+                            pathTransitionDuration: 1,
+                            pathTransition: 'stroke-dashoffset 0.5s ease 0s'
+                        })}/>
+                        <text>Django</text>
                     </div>
                 </div>
             </div>
